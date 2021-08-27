@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Technique extends Model
 {
-     public function index(Technique $technique)
+   public function onomatopoeias()
     {
-        return view('index')->with(['techniques' => $technique->get()]);  
+        return $this->hasMany(Onomatopoeia::class);
     }
 }
