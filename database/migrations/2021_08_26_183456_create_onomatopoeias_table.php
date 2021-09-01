@@ -15,8 +15,9 @@ class CreateOnomatopoeiasTable extends Migration
     {
         Schema::create('onomatopoeias', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->INT('technique_id');
+            $table->integer('technique_id');
             $table->string('name');
+            $table->timestamps();
         });
     }
 

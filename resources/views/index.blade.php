@@ -14,14 +14,5 @@
       <input type="submit" value="検索">
     </div>
   </form>
-  <h2>ギターのテクニック擬音登録</h2>
-  <p>ギターのテクニックの擬音を登録できます。ギターを知っている方登録お願いします。</p>
-  <form action="result.html" method="get" class="form">
-    <input type="text" name="title" placeholder="ギターのテクニック"/><br>
-
-    <textarea name="message" placeholder="ギターの擬音"></textarea><br>
-    <input type="submit" value="登録"/>
-    </div>
-  </form>
 </body>
 </html>

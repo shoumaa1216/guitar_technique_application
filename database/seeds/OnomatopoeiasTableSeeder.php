@@ -73,6 +73,16 @@ class OnomatopoeiasTableSeeder extends Seeder
          'technique_id'=>'12',
          'name'=>'リルリル',
         ],
+        [
+          'id'=>'13',
+          'technique_id'=>'1',
+          'name'=>'ウイーン',
+        ],
+        [
+          'id'=>'14',
+          'technique_id'=>'1',
+          'name'=>'ウィーン',
+        ],
         ]
       );
     }
