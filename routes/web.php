@@ -12,3 +12,5 @@
 */
 Route::get('/', 'TechniqueController@index');
 Route::post('/result', 'OnomatopoeiaController@result');
+Route::get('/register', 'TechniqueController@register');
+
