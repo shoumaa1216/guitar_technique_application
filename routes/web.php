@@ -11,3 +11,4 @@
 |
 */
 Route::get('/', 'TechniqueController@index');
+Route::post('/result', 'OnomatopoeiaController@result');
