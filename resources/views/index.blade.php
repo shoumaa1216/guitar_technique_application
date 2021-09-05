@@ -21,5 +21,11 @@
        <input type="submit" value="擬音登録ページ">   
       </div>
  </form>
+ <form action="list" method="get" class="list_form">
+      {{ csrf_field() }}
+      <div class="list_form">
+       <input type="submit" value="擬音一覧ページ">   
+      </div>
+ </form>
 </body>
 </html>

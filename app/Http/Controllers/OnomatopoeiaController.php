@@ -20,5 +20,12 @@ class OnomatopoeiaController extends Controller
      "input_name" => $input_name[0],
     ]);
  }
+ 
+ public function store(Request $request, Onomatopoeia $onomatopoeia)
+{
+    $input = $request['onomatopoeia'];
+    $onomatopoeia->fill($input)->save();
+    return view('index');
+}
 
 }

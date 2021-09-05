@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ギターテクニック擬音登録ページ</title>
+    <link rel="stylesheet" href="style-register.css">
+</head>
+<body>
+<p class="explanation">{{ $technique_name }}に対する擬音を入力して送信してください</p>
+<form action="/posts" method="POST">
+            @csrf
+            <div class="onomatopoeia">
+                <input type="text" name="onomatopoeia[name]" />
+            </div>
+            <input type="submit" value="送信"/>
+            </form>
+ <div class="footer">
+    <a href="/register">戻る</a>
+ </div>
+</body>
+</html>

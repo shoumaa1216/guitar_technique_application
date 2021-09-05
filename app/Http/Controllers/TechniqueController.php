@@ -17,5 +17,16 @@ class TechniqueController extends Controller
     return view('register')->with(['techniques' => $technique->get()]);
 }
 
+public function post(Technique $technique)
+{
+    return view('post')->with(["technique_name" => $technique->name]);
+}
+
+public function list(Technique $technique)
+{
+    return view('list')->with(['techniques' => $technique->get()]);  
+}
+
+
 
 }
