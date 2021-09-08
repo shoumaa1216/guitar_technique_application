@@ -7,6 +7,10 @@
 </head>
 <body>
 <p class="explanation">{{ $technique_name }}に対する擬音を入力して送信してください</p>
+<p class="list">{{ $technique_name }}の擬音一覧です</p>
+ @foreach ($onomatopoeias as $onomatopoeia)
+        <p class='onoamatopoeias'>{{ $onomatopoeia->name }}</p>
+    @endforeach 
 <form action="/posts" method="POST">
             @csrf
             <div class="onomatopoeia">

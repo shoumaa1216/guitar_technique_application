@@ -17,16 +17,18 @@ class TechniqueController extends Controller
     return view('register')->with(['techniques' => $technique->get()]);
 }
 
-public function post(Technique $technique)
+public function post(Technique $technique, Request $request)
 {
-    return view('post')->with(["technique_name" => $technique->name]);
+    $onomatopoeias = Technique::find($technique->id)->onomatopoeias;
+    return view('post')->with(["technique_name" => $technique->name,
+                               "onomatopoeias" => $onomatopoeias,
+    ]);
 }
 
 public function list(Technique $technique)
 {
     return view('list')->with(['techniques' => $technique->get()]);  
 }
-
 
 
 }

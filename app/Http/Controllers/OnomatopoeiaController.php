@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Technique;
 use App\Onomatopoeia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -26,6 +27,12 @@ class OnomatopoeiaController extends Controller
     $input = $request['onomatopoeia'];
     $onomatopoeia->fill($input)->save();
     return view('index');
+}
+
+public function detail(Onomatopoeia $onomatopoeia, Technique $technique)
+{
+    return view('detail')->with(["onomatopoeia_name" => $onomatopoeia->get()
+    ]);  
 }
 
 }

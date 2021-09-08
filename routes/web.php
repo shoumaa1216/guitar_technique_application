@@ -16,4 +16,5 @@ Route::get('/register', 'TechniqueController@register');
 Route::get('/register/{technique}', 'TechniqueController@post');
 Route::post('/posts', 'OnomatopoeiaController@store');
 Route::get('/list', 'TechniqueController@list');
+Route::get('/list/{{ $technique->id }}', 'OnomatopoeiaController@detail');
 
