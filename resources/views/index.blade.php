@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>ギターテクニック擬音検索</title>
     <link rel="stylesheet" href="style-index.css">
+    
 </head>
 <body>
  <h1 class="title">ギターテクニック擬音検索</h1>
@@ -12,6 +13,7 @@
      {{ csrf_field() }}
      <div class="result_form">
       <input type="text" name="onomatopoeia[name]" id="text">
+      <p class="name__error" style="color:red">{{ $errors->first('onomatopoeia.name') }}</p>
       <input type="submit" value="検索">
       </div>
   </form>
@@ -27,5 +29,6 @@
        <input type="submit" value="擬音一覧ページ">   
       </div>
  </form>
+ <script src="index.js"></script>
 </body>
 </html>

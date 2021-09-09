@@ -6,20 +6,25 @@ use App\Technique;
 use App\Onomatopoeia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Requests\OnomatopoeiaRequest;
 
 class OnomatopoeiaController extends Controller
 {
 
- public function result(Request $request, Onomatopoeia $onomatopoeia)
+ public function result(OnomatopoeiaRequest $request, Onomatopoeia $onomatopoeia)
  {
     $input = $request['onomatopoeia'];
     $input_name = array_values($input);
     $onomatopoeia_name = DB::table('onomatopoeias')->where('name', '=', $input)->pluck('id');
+    if (!empty($onomatopoeia_name)){
+        return view('failure');
+    }else{
     $technique_name = Onomatopoeia::find($onomatopoeia_name[0])->technique->name;
     return view('result')->with([
      "technique_name" => $technique_name,
      "input_name" => $input_name[0],
     ]);
+    }
  }
  
  public function store(Request $request, Onomatopoeia $onomatopoeia)
