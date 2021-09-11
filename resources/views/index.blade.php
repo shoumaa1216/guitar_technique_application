@@ -29,6 +29,5 @@
        <input type="submit" value="擬音一覧ページ">   
       </div>
  </form>
- <script src="index.js"></script>
 </body>
 </html>
