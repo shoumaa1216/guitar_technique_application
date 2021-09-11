@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExplanationsTable extends Migration
+class AddExplanationToExplanationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateExplanationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('explanations', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('technique_id');
+        Schema::table('explanations', function (Blueprint $table) {
             $table->string('explanation');
-            $table->timestamps();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateExplanationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('explanations');
+        Schema::table('explanations', function (Blueprint $table) {
+            //
+        });
     }
 }
