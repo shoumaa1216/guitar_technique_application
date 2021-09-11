@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
        $this->call(TechniquesTableSeeder::class);
        $this->call(OnomatopoeiasTableSeeder::class);
+       $this->call(ExplanationsTableSeeder::class);
     }
 }
