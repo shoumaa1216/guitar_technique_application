@@ -7,6 +7,7 @@
 </head>
 <body>
    <p class='body'>{{ $input_name }}という擬音は{{ $technique_name }}です！</p>
+   <p class='explanation'>{{ $technique_name }}は{{ $explanation }}です！</p>
     <div class="footer">
         <a href="/">戻る</a>
     </div>

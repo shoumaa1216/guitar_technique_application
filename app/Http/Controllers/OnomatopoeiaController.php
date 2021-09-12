@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Technique;
 use App\Onomatopoeia;
+use App\Explanation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\OnomatopoeiaRequest;
@@ -11,7 +12,7 @@ use App\Http\Requests\OnomatopoeiaRequest;
 class OnomatopoeiaController extends Controller
 {
 
- public function result(OnomatopoeiaRequest $request, Onomatopoeia $onomatopoeia, Technique $technique)
+ public function result(OnomatopoeiaRequest $request, Onomatopoeia $onomatopoeia, Technique $technique, Explanation $explanation)
  {
     $input = $request['onomatopoeia'];
     $input_name = array_values($input);
@@ -22,10 +23,13 @@ class OnomatopoeiaController extends Controller
             'techniques' => $technique->get(),
              ]);
     }else{
+    $technique = Onomatopoeia::find($onomatopoeia_name[0])->technique->id;
     $technique_name = Onomatopoeia::find($onomatopoeia_name[0])->technique->name;
+    $explanation =  Technique::find($technique)->explanations[0]->explanation;
     return view('result')->with([
      "technique_name" => $technique_name,
      "input_name" => $input_name[0],
+     "explanation" => $explanation,
     ]);
 }
  }

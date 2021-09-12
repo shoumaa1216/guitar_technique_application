@@ -12,4 +12,9 @@ class Technique extends Model
     {
         return $this->hasMany(Onomatopoeia::class);
     }
+    
+    public function explanations()
+    {
+        return $this->hasMany(Explanation::class);
+    }
 }
