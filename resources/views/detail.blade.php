@@ -5,10 +5,10 @@
     <title>ギターテクニック擬音一覧ページ</title>
 </head>
 <body>
-<p class="explanation">{{ $techniques }}に対する擬音を表示します。</p>
+<p class="explanation">{{ $technique_name }}に対する擬音を表示します。</p>
  <div class='onomatopoeias'>
-    @foreach ($onomatopoeia_name as $onomatopoeia)
-        <h2 class='onomatopoeia_name'>{{ $onomatopoeia->name }}</h2>
+    @foreach ($onomatopoeias as $onomatopoeia)
+        <h2 class='onomatopoeias'>{{ $onomatopoeia->name }}</h2>
     @endforeach 
  </div>
  <div class="footer">

@@ -16,6 +16,7 @@
             <div class="onomatopoeia">
                 <input type="text" name="onomatopoeia[name]" />
             </div>
+            <input type="hidden" name="onomatopoeia[technique_id]" value="{{ $technique_id }}">
             <input type="submit" value="送信"/>
             </form>
  <div class="footer">

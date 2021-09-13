@@ -10,4 +10,9 @@ class Onomatopoeia extends Model
     {
         return $this->belongsTo(Technique::class);
     }
+    
+    protected $fillable = [
+    'name',
+    'technique_id'
+];
 }

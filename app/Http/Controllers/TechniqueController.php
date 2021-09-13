@@ -22,6 +22,7 @@ public function post(Technique $technique, Request $request)
     $onomatopoeias = Technique::find($technique->id)->onomatopoeias;
     return view('post')->with(["technique_name" => $technique->name,
                                "onomatopoeias" => $onomatopoeias,
+                               "technique_id" => $technique->id,
     ]);
 }
 
