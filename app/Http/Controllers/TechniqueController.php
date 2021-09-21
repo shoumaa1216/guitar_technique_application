@@ -12,9 +12,9 @@ class TechniqueController extends Controller
     return view('index');
 }
 
-    public function register(Technique $technique)
+    public function registers(Technique $technique)
 {
-    return view('register')->with(['techniques' => $technique->get()]);
+    return view('registers')->with(['techniques' => $technique->get()]);
 }
 
 public function post(Technique $technique, Request $request)

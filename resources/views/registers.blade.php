@@ -10,7 +10,7 @@
  <p class="explanation">この中からギターテクニックを選びフォームから擬音を入力して登録してください。</p>
  <div class='techniques'>
     @foreach ($techniques as $technique)
-        <h2 class='technique_name'><a href="/register/{{ $technique->id }}">{{ $technique->name }}</a></h2>
+        <h2 class='technique_name'><a href="/registers/{{ $technique->id }}">{{ $technique->name }}</a></h2>
     @endforeach 
  </div>
  <div class="footer">

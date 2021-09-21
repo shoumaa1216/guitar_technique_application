@@ -20,7 +20,7 @@
             <input type="submit" value="送信"/>
             </form>
  <div class="footer">
-    <a href="/register">戻る</a>
+    <a href="/registers">戻る</a>
  </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ギターテクニック擬音検索</title>
-    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style-index.css') }}" >
     
 </head>
 <body>
@@ -17,7 +17,7 @@
       <input type="submit" value="検索">
       </div>
   </form>
- <form action="register" method="get" class="register_form">
+ <form action="registers" method="get" class="register_form">
       {{ csrf_field() }}
       <div class="register_form">
        <input type="submit" value="擬音登録ページ">   
