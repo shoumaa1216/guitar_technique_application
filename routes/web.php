@@ -12,7 +12,7 @@
 */
 Route::get('/', 'TechniqueController@index');
 Route::post('/result', 'OnomatopoeiaController@result');
-Route::get('/registers', 'TechniqueController@registers')->middleware('auth');
+Route::get('/registers', 'TechniqueController@registers');
 Route::get('/registers/{technique}', 'TechniqueController@post');
 Route::post('/posts', 'OnomatopoeiaController@store');
 Route::get('/list', 'TechniqueController@list');

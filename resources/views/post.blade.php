@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ギターテクニック擬音登録ページ</title>
-    <link rel="stylesheet" href="style-register.css">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/post.css') }}">
 </head>
 <body>
 <p class="explanation">{{ $technique_name }}に対する擬音を入力して送信してください</p>

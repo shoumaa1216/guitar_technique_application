@@ -1,0 +1,19 @@
+body{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/30f62c5d2d810e08193584db04e9e821_s.jpg")
+    center / cover;
+  
+}
+
+
+
+.registers-content{
+position: relative; 
+color: #f0ffff;
+}
+
+.explanation{
+font-size: 25px;
+}

@@ -11,6 +11,7 @@ class TechniquesTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table("techniques")->truncate();
         DB::table("techniques")->insert(
       [
         [
@@ -43,23 +44,27 @@ class TechniquesTableSeeder extends Seeder
         ],
         [
          'id'=>'8',
-         'name'=>'ブラッシング',
-        ],
-         [
-          'id'=>'9',
-          'name'=>'半音チョーキング',
+         'name'=>'カッティング',
         ],
         [
-          'id'=>'10',
+          'id'=>'9',
           'name'=>'ユニゾンチョーキング',
         ],
         [
-          'id'=>'11',
+          'id'=>'10',
           'name'=>'スライド',
         ],
         [
-         'id'=>'12',
+         'id'=>'11',
          'name'=>'トリル',
+        ],
+         [
+         'id'=>'12',
+         'name'=>'タッピング',
+        ],
+         [
+         'id'=>'13',
+         'name'=>'グリッサンド',
         ],
         ]
       );

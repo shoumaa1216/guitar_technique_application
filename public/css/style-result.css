@@ -1,0 +1,28 @@
+.result{
+　position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/00.jpg")
+    center / cover;
+}
+
+.result::before{
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.4);
+}
+
+.result-content{
+position: relative; 
+top: 200px; 
+left: 600px; 
+color: #f0ffff;
+}
+.explanation2{
+    font-size: 25px;
+}
