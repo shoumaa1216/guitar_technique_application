@@ -27,7 +27,7 @@
  </form>
  @endauth
  @guest
- <p class="explanation2">擬音登録には会員登録が必要です。上のバーから会員およびログインを行うと擬音の登録ができるようになります。</p>
+ <p class="explanation2">擬音登録には会員登録が必要です。上のバーから会員登録およびログインを行うと擬音の登録ができるようになります。</p>
  @endguest
  <form action="list" method="get" class="list_form">
       {{ csrf_field() }}
