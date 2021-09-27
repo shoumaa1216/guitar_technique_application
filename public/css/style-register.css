@@ -1,4 +1,4 @@
-body{
+.registers{
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -12,8 +12,11 @@ body{
 .registers-content{
 position: relative; 
 color: #f0ffff;
-}
-
-.explanation{
+text-align: center; 
 font-size: 25px;
 }
+
+.footer{
+  font-size: 30px;
+}
+

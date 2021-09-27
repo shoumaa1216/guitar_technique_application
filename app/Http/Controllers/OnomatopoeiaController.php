@@ -40,12 +40,14 @@ class OnomatopoeiaController extends Controller
     $onomatopoeia->fill($input)->save();
     return view('store');
 }
-public function detail(Onomatopoeia $onomatopoeia, Technique $technique)
+public function detail(Onomatopoeia $onomatopoeia, Technique $technique, Explanation $explanation)
 {
     $onomatopoeias = Technique::find($technique->id)->onomatopoeias;
+    $explanation =  Technique::find($technique->id)->explanations[0]->explanation;
     return view('detail')->with([
     "technique_name" => $technique->name,
      "onomatopoeias" => $onomatopoeias,
+     "explanation" => $explanation,
     ]);  
 }
 

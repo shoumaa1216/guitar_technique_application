@@ -1,3 +1,15 @@
-.technique{
-    border: 2px solid #CCC;
+.failure-content{
+position: relative; 
+color: #f0ffff;
+text-align: center;
+font-size: 25px;
+}
+
+.failure{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/download.jpg")
+    center / cover;
+  
 }

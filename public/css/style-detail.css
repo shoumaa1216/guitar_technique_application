@@ -1,0 +1,15 @@
+.detail-content{
+position: relative; 
+color: #f0ffff;
+text-align: center;
+font-size: 25px;
+}
+
+.detail{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/electric-guitar-1846582_1920-730x410.jpg")
+    center / cover;
+  
+}

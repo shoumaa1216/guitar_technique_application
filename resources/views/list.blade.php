@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
+@extends('layouts.app')
+@section('title')
+
     <title>ギターテクニック擬音一覧ページ</title>
-</head>
-<body>
+@endsection
+@section('link')
+<link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style-list.css') }}">
+@endsection
+@section('content') 
+<div class="list">
+<div class="list-contnt">
  <h1 class="title">ギターテクニック一覧</h1>
  <p class="explanation">この中からギターテクニックを選んでください。</p>
  <div class='techniques'>
@@ -15,5 +19,6 @@
  <div class="footer">
             <a href="/">戻る</a>
  </div>
-</body>
-</html>
+ </div>
+ </div>
+ @endsection

@@ -1,0 +1,17 @@
+.store{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/publicdomainq-0036296ykd.jpg")
+    center / cover;
+  
+}
+
+
+
+.store-content{
+position: relative; 
+color: #f0ffff;
+text-align: center; 
+font-size: 25px;
+}
