@@ -26,3 +26,8 @@ color: #f0ffff;
 .explanation2{
     font-size: 25px;
 }
+
+.box{
+  height: 100px;
+  width: 1200px;
+}

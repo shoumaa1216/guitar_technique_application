@@ -9,7 +9,9 @@
 <div class="result">
     <div class="result-content">
    <h1 class='explanation'>{{ $input_name }}という擬音は{{ $technique_name }}です！</h1>
+   <div class="box">
    <p class='explanation2'>{{ $technique_name }}は{{ $explanation }}です！</p>
+   </div>
     <div class="footer">
         <a href="/">戻る</a>
     </div>
