@@ -26,10 +26,12 @@ class OnomatopoeiaController extends Controller
     $technique = Onomatopoeia::find($onomatopoeia_name[0])->technique->id;
     $technique_name = Onomatopoeia::find($onomatopoeia_name[0])->technique->name;
     $explanation =  Technique::find($technique)->explanations[0]->explanation;
+    $technique_url = Onomatopoeia::find($onomatopoeia_name[0])->technique->url;
     return view('result')->with([
      "technique_name" => $technique_name,
      "input_name" => $input_name[0],
      "explanation" => $explanation,
+     "technique_url" => $technique_url,
     ]);
 }
  }

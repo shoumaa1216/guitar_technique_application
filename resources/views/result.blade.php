@@ -11,6 +11,7 @@
    <h1 class='explanation'>{{ $input_name }}という擬音は{{ $technique_name }}です！</h1>
    <div class="box">
    <p class='explanation2'>{{ $technique_name }}は{{ $explanation }}です！</p>
+   <p class='explanation3'>解説動画</p>
    </div>
      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
@@ -30,7 +31,7 @@
         player = new YT.Player('player', {
           height: '360',
           width: '640',
-          videoId: 'haQ4E4CSRRA&ab_channel=ギター博士',
+          videoId: '{{ $technique_url }}',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange

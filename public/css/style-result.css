@@ -31,3 +31,14 @@ color: #f0ffff;
   height: 100px;
   width: 1200px;
 }
+
+#player{
+  position: relative;
+  top: 60px;
+}
+
+.explanation3{
+  position: relative;
+  bottom: 23px;
+  font-size: 25px;
+}
