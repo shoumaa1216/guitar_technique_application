@@ -9,7 +9,7 @@
  @section('content') 
  <div class="detail">
      <div class="detail-content">
-<p class="explanation">{{ $technique_name }}に対する擬音を表示します。</p>
+<p class="explanation">現時点でこのサイトに登録されている{{ $technique_name }}に対する擬音を表示します。</p>
  <div class='onomatopoeias'>
     @foreach ($onomatopoeias as $onomatopoeia)
         <h2 class='onomatopoeias'>{{ $onomatopoeia->name }}</h2>

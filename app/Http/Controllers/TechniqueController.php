@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Technique;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TechniqueController extends Controller
 {
@@ -20,9 +21,11 @@ class TechniqueController extends Controller
 public function post(Technique $technique, Request $request)
 {
     $onomatopoeias = Technique::find($technique->id)->onomatopoeias;
+    $technique_url = DB::table('techniques')->where('id', '=', $technique->id)->pluck('url');
     return view('post')->with(["technique_name" => $technique->name,
                                "onomatopoeias" => $onomatopoeias,
                                "technique_id" => $technique->id,
+                               "technique_url" => $technique_url,
     ]);
 }
 
