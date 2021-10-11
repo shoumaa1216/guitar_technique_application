@@ -37,7 +37,7 @@ class TechniquesTableSeeder extends Seeder
          [
           'id'=>'5',
           'name'=>'ハーモニクス＆アーミング',
-          'url' => 'WPgJk2CuRac',
+          'url' => 'Kh-GvnerfmU',
         ],
         [
           'id'=>'6',
