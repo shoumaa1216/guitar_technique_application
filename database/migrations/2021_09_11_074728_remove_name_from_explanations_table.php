@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RemoveNameFromExplanationsTable extends Migration
+class CreateExplanationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class RemoveNameFromExplanationsTable extends Migration
      */
     public function up()
     {
-        Schema::table('explanations', function (Blueprint $table) {
-            $table->dropColumn('name'); 
+        Schema::create('explanations', function (Blueprint $table) {
+         $table->dropColumn('name'); 
         });
     }
 
@@ -25,8 +25,6 @@ class RemoveNameFromExplanationsTable extends Migration
      */
     public function down()
     {
-        Schema::table('explanations', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('explanations');
     }
 }
