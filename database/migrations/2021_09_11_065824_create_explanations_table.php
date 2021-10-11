@@ -16,7 +16,7 @@ class CreateExplanationsTable extends Migration
         Schema::create('explanations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('technique_id');
-            $table->string('name');
+            $table->string('explanation');
             $table->timestamps();
         });
     }
