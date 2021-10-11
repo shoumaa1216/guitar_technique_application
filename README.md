@@ -1,12 +1,12 @@
 # アプリ名
 
 ギターテクニック擬音検索アプリケーション
-
+https://protected-fjord-30624.herokuapp.com/result
 
 
 ## デモ
 
-![デモ](https://protected-fjord-30624.herokuapp.com/)
+![デモ]()
 
 
 ## 使い方
