@@ -1,3 +1,51 @@
+# アプリ名
+
+ギターテクニック擬音検索アプリケーション
+
+
+
+## デモ
+
+![デモ](https://protected-fjord-30624.herokuapp.com/)
+
+
+## 使い方
+
+
+
+1. 検索バーに自分の頭の中でなっている擬音を入力してギターテクニックを検索する
+2. 擬音登録ページで実際にギターテクニックを聞き、自分が感じた擬音をサイトに登録する
+
+
+## 環境
+
+* laravel6
+* cloud9
+
+
+## 工夫した点
+リレーショナルデータベースを用いて、擬音とテクニックを結び付けた。
+登録ページでギターをやったことのない人のためにテクニックを動画を用意して、擬音を登録しやすいようにした。
+
+
+
+
+## 文責
+
+
+
+* 原将真
+* shoumaa1216@gmail.com
+
+
+
+## ライセンス
+
+
+
+"guitar_technique_application" is under The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -76,3 +124,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
