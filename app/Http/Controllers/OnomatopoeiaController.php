@@ -46,10 +46,12 @@ public function detail(Onomatopoeia $onomatopoeia, Technique $technique, Explana
 {
     $onomatopoeias = Technique::find($technique->id)->onomatopoeias;
     $explanation =  Technique::find($technique->id)->explanations[0]->explanation;
+    $technique_url = DB::table('techniques')->where('id', '=', $technique->id)->pluck('url');
     return view('detail')->with([
     "technique_name" => $technique->name,
      "onomatopoeias" => $onomatopoeias,
      "explanation" => $explanation,
+     "technique_url" => $technique_url,
     ]);  
 }
 
