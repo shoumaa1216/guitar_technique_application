@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Technique;
+use App\Onomatopoeia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
