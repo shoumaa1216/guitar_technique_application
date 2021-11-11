@@ -1,78 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# アプリ名
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+ギターテクニック擬音検索アプリケーション
 
-## About Laravel
+## URL
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+https://sleepy-sands-78780.herokuapp.com/
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## デモ
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![デモ１](https://user-images.githubusercontent.com/83636953/140125267-8289a5c1-148f-4151-a0ac-cfa15491655c.png)
+![デモ2](https://user-images.githubusercontent.com/83636953/140125311-1485ccf4-60db-4406-8abd-bc7632f855ed.png)
+![デモ3](https://user-images.githubusercontent.com/83636953/140125381-d4434af1-24d8-44be-a71c-3fb2568bb453.png)
+![デモ4](https://user-images.githubusercontent.com/83636953/140125401-d0958c9f-de02-44d0-abfa-8e995fa86df7.png)
+![デモ5](https://user-images.githubusercontent.com/83636953/140125437-50eebaad-bff3-460e-b134-9c5edfec779c.png)
+![デモ6](https://user-images.githubusercontent.com/83636953/140125469-3e1a1838-548a-4dc9-8642-ef7a7f0b46e3.png)
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 使い方
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+1. 検索バーに自分の頭の中でなっている擬音を入力してギターテクニックを検索する
+2. 擬音登録ページで実際にギターテクニックを聞き、自分が感じた擬音をサイトに登録する(仮ログインメール:shoumaa1216@gmail.com パスワード:shouma0326)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 環境
 
-## Code of Conduct
+* laravel6
+* cloud9
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## 工夫した点
+リレーショナルデータベースを用いて、擬音とテクニックを結び付けた。
+登録ページでギターをやったことのない人のためにテクニックをYouTubeのIFrame Player APIを使用し、YouTubeの動画を用意して、擬音を登録しやすいようにした。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+## このアプリを作った背景
+自分が中学生の時、ロックバンドがやっているような、かっこいいギターテクニックをやりたくて、ギターを始めたのですが、そのテクニックの名前が分からず、調べることができなかったので、楽しくなくなって辞めてしまいました。高校生になってまたギターを始めて、どんどん曲を練習していったら、中学生の時弾きたかったカッコいいギターテクニックにたどり着き、かっこいいギターテクニックにたどり着くには時間と練習が必要なことがわかりました。自分が中学生の時にこのアプリをがあればギターを挫折せず、楽しくできたのではないかと考えました。
+自分のようにかっこいいギターテクニックをやりたくて、ギターを始めた人に使ってもらい、ギターの楽しさを知ってもらいたいと思って作りました。
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 文責
+
+
+
+* 原将真
+* shoumaa1216@gmail.com
+
+
+
+
+
+
+
+
