@@ -13,3 +13,13 @@ font-size: 25px;
     center / cover;
   
 }
+
+@media screen and (max-width: 479px) {
+  #player{
+  height: 200px;
+  width: 375px;
+}
+.explanation{
+    font-size: 25px;
+}
+}

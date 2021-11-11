@@ -1,3 +1,4 @@
+
 .post-content{
 position: relative; 
 color: #f0ffff;
@@ -12,4 +13,12 @@ font-size: 25px;
   background: url("../img/publicdomainq-0015622vki.jpg")
     center / cover;
   
+}
+
+
+@media screen and (max-width: 479px) {
+   #player{
+  height: 200px;
+  width: 375px;
+}
 }

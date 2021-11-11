@@ -1,3 +1,4 @@
+@media screen and (min-width: 767px) {
 .result{
 　position: relative;
   width: 100%;
@@ -41,4 +42,27 @@ color: #f0ffff;
   position: relative;
   bottom: 23px;
   font-size: 25px;
+}
+}
+
+@media screen and (max-width: 479px) {
+.result{
+  background: url("../img/sumaho2.jpg")
+    center / cover;
+     height: 750px;
+}
+#player{
+  height: 200px;
+  width: 375px;
+}
+.explanation{
+    font-size: 25px;
+}
+.result-content{
+position: relative; 
+color: #f0ffff;
+}
+.explanation2{
+    font-size: 20px;
+}
 }
